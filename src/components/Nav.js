@@ -1,18 +1,18 @@
 import React from 'react';
 import image from "../images/little-lemon.png";
-
+import { Image, Button, ButtonGroup } from '@chakra-ui/react';
 
 export default function Nav() {
   return (
     <div className="nav">
         <img src={image} alt="" className="image"/>
         <ul className="list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Reservations</a></li>
-            <li><a href="">Order Online</a></li>
-            <li><a href="">Login</a></li>
+            <li><Button bg="#F4CE14"><a href="/">Home</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="">About</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="">Menu</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="/reservations">Reservations</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="">Order Online</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="">Login</a></Button></li>
         </ul>
     </div>
   )

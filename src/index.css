@@ -44,6 +44,59 @@ code {
   font-weight: bold;
 }
 
+/* Main Components */
+
+.main-div{
+  display: grid;
+  grid: auto auto / auto auto auto auto;
+  grid-gap: 10px;
+  padding: 50px 20% 50px 20%;
+}
+
+.main-div-title{
+  width: 50%;
+}
+
+.main-div-title p {
+  padding-bottom: 10px;
+}
+
+.image-main{
+  width: 300px;
+  height: 300px;
+}
+
+
+/*Main 2*/
+.main2-div1{
+  display: grid;
+  grid: auto auto / auto auto auto auto;
+  grid-gap: 30px;
+  padding: 0px 20% 20px 20%;
+}
+
+.main2-div2{
+  display: grid;
+  grid: auto auto / auto auto auto auto;
+  grid-gap: 10px;
+  padding: 0px 20% 0px 20%;
+  margin-bottom: 100px;
+}
+
+/*footer*/ 
+
+.footer{
+  background-color: black;
+  color: azure;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
 
 /* Responsive styles for phones */
 @media screen and (max-width: 767px) {
