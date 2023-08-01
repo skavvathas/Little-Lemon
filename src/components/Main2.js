@@ -35,9 +35,10 @@ const Main2 = () => {
     <div>
       <div className="main2-div1">
         <Text fontSize='5xl'>This weeks specials!</Text>
-        <Button bg="#F4CE14">Online menu</Button>
+        <div className="button-menu">
+          <Button bg="#F4CE14">Online menu</Button>
+        </div>
       </div>
-      
       <div className="main2-div2">
         {dishes.map((dish) => (
             <Dish

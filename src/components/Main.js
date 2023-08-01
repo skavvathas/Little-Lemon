@@ -1,8 +1,15 @@
 import React from 'react';
 import image1 from "../images/restauranfood.jpg";
 import { Text, Image, Button, ButtonGroup } from '@chakra-ui/react';
+import { useNavigate } from "react-router-dom";
 
 export default function Main() {
+  const navigate = useNavigate();
+
+  const reserveTable = () =>{
+    navigate("/reservations");
+  }
+
   return (
     <div className="main-div">
       <div className="main-div-title">
@@ -14,7 +21,7 @@ export default function Main() {
             recipes served with a modern 
             twist.
         </p>
-        <Button bg="#F4CE14">Reserve a table</Button>
+        <Button bg="#F4CE14" onClick={reserveTable}>Reserve a table</Button>
         
       </div>
       <div>

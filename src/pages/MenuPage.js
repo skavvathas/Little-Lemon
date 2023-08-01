@@ -1,16 +1,17 @@
 import React from 'react';
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Main from "../components/Main"
+import Main2 from "../components/Main2";
 
-const AboutPage = () => {
+const MenuPage = () => {
   return (
     <div>
       <Nav />
-      <Main />
+      <Main2 />
       <Footer />
     </div>
   )
 }
 
-export default AboutPage
+export default MenuPage
+

@@ -8,8 +8,8 @@ export default function Nav() {
         <img src={image} alt="" className="image"/>
         <ul className="list">
             <li><Button bg="#F4CE14"><a href="/">Home</a></Button></li>
-            <li><Button bg="#F4CE14"><a href="">About</a></Button></li>
-            <li><Button bg="#F4CE14"><a href="">Menu</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="/about">About</a></Button></li>
+            <li><Button bg="#F4CE14"><a href="/menu">Menu</a></Button></li>
             <li><Button bg="#F4CE14"><a href="/reservations">Reservations</a></Button></li>
             <li><Button bg="#F4CE14"><a href="">Order Online</a></Button></li>
             <li><Button bg="#F4CE14"><a href="">Login</a></Button></li>

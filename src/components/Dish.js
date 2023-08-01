@@ -12,14 +12,13 @@ const Dish = ({ title, price, description, imageSrc }) => {
             borderRadius='lg'
             />
             <Stack mt='6' spacing='3'>
-            <Heading size='md'>{title}</Heading>
-            <Text color="#EE9972" fontSize='2xl'>
-                {price}
-            </Text>
-            <Text>
-                {description}
-            </Text>
-            
+                <Heading size='md'>{title}</Heading>
+                <Text color="#EE9972" fontSize='2xl'>
+                    {price}
+                </Text>
+                <Text>
+                    {description}
+                </Text>
             </Stack>
         </CardBody>
         <Divider />
