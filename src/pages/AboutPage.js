@@ -8,6 +8,9 @@ const AboutPage = () => {
     <div>
       <Nav />
       <Main />
+      <div style={{marginBottom: '15%'}}>
+
+      </div>
       <Footer />
     </div>
   )

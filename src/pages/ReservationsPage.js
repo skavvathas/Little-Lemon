@@ -23,6 +23,7 @@ const ReservationsPage = () => {
   const { radioGroup, date, time, numberOfGuests, occasion, firstName, lastName, email, phoneNumber, specialRequests} = useBookingContext();
   const [flag, setFlag] = useState(false);
   const navigate = useNavigate();
+  
 
   const handleSubmit1 = (event) => {
     //await isAllValid1();
@@ -60,6 +61,7 @@ const ReservationsPage = () => {
 
     console.log("Flag!");
 
+    // Sending of email
     const serviceId = 'service_2b7ywx4';
     const templateId = 'template_ixr3fcl';
 
@@ -87,37 +89,6 @@ const ReservationsPage = () => {
         console.error('Error sending email:', error);
       });
   }
-
-  /*async function isAllValid2(event){
-    //lastname firstname email->@ password->one number and 8 letter minimum
-    if(firstName.length === 0 || lastName.length === 0 || regUser.username.length < 4){
-      alert("Check the fields!");
-      event.preventDefault();
-    }
-
-    if(email.includes("@")){
-      alert("The email must conclude '@'");
-      event.preventDefault();
-    }
-
-    if(phoneNumber.length < 8){
-      alert("The length of phoneNumber must be > 8");
-      event.preventDefault();
-    }
-
-    if(specialRequests.length < 2){
-      alert("Add a request");
-      event.preventDefault();
-    }    
-  }*/
-
-  /*async function isAllValid1(event){
-    //lastname firstname email->@ password->one number and 8 letter minimum
-    if(date.length === 0 || time.length === 0 || numberOfGuests.length === 0 || occasion.length === 0){
-      alert("Check the fields!");
-      event.preventDefault();
-    }
-  }*/
 
   useEffect(() => {
     console.log(time);
