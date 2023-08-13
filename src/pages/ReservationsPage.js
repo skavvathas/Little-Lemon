@@ -62,11 +62,11 @@ const ReservationsPage = () => {
     console.log("Flag!");
 
     // Sending of email
-    const serviceId = 'service_2b7ywx4';
-    const templateId = 'template_ixr3fcl';
+    const serviceId = 'service_..........'; // put your serviceId
+    const templateId = 'template_...........'; // put your templateId
 
     // Replace these with your own values
-    const userId = 'hQrK0Y2d4VCdTh6jT';
+    const userId = '.............'; // put your useId
     const emailParams = {
       from_name: "Spiros",
       to_email: `${email}`,
