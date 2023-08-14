@@ -31,7 +31,10 @@ const ReservationsPage = () => {
       alert("Check the fields!");
       event.preventDefault();
     }
-    else{
+    else if(numberOfGuests > 10){
+      alert("Number Of Guests should be < 10");
+      event.preventDefault();
+    } else{
       setFlag(true);
       console.log("Flag!");
     }
