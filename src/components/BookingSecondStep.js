@@ -69,17 +69,17 @@ const BookingSecondStep = ({handleSubmit}) => {
                     <div className="">
                         <div className="booking-dates">
                             <div className="input-group booking-elements">
-                                <Text fontSize='xl'>{time}</Text>
-                                <Text fontSize='xl'>{date}</Text>
+                                <Button colorScheme='orange'>{time}</Button>
+                                <Button colorScheme='teal'>{date}</Button>
                             </div>
                             <div className="input-group booking-elements">
-                                <Text fontSize='xl'>{occasion}</Text>
-                                <Text fontSize='xl'>{numberOfGuests} guests</Text>
+                                <Button colorScheme='cyan'>{occasion}</Button>
+                                <Button colorScheme='purple'>{numberOfGuests} guests</Button>
                             </div>  
                         </div>
-                        <Text fontSize='xl'>{radioGroup}</Text>
                         
                     </div>
+                    {/*<Button colorScheme='cyan'>{radioGroup}</Button>*/}
                 </div>
 
                 <div className="input-group" style={{ marginLeft: '30px' }}>
